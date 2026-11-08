@@ -39,3 +39,13 @@ python -m unittest discover -s tests
 7 tests cover snapshot round-trips, missing/sanitized ids, run-to-completion,
 crash-resume without re-execution, step budgets, and no-rerun of finished
 jobs.
+
+## Demo
+
+`demo.py` reproduces the recorded demo run end to end, offline (standard
+library only, no model calls):
+
+    python demo.py
+
+It executes the library's real code path and prints the same output shown in
+the recorded demo video.
